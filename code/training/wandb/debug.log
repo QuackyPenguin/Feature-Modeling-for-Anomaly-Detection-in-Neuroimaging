@@ -1,0 +1,25 @@
+2025-08-26 08:21:53,527 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Current SDK version is 0.18.7
+2025-08-26 08:21:53,527 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Configure stats pid to 1645400
+2025-08-26 08:21:53,527 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Loading settings from /home/dkovacevic/.config/wandb/settings
+2025-08-26 08:21:53,528 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Loading settings from /home/dkovacevic/MHM_project/training/wandb/settings
+2025-08-26 08:21:53,528 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-08-26 08:21:53,528 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': 'offline', '_disable_service': None}
+2025-08-26 08:21:53,528 INFO    MainThread:1645400 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/home/dkovacevic/MHM_project/training/train.py', 'program': '/home/dkovacevic/MHM_project/training/train.py'}
+2025-08-26 08:21:53,530 INFO    MainThread:1645400 [wandb_init.py:_log_setup():533] Logging user logs to /home/dkovacevic/MHM_project/training/wandb/offline-run-20250826_082153-65usehh6/logs/debug.log
+2025-08-26 08:21:53,531 INFO    MainThread:1645400 [wandb_init.py:_log_setup():534] Logging internal logs to /home/dkovacevic/MHM_project/training/wandb/offline-run-20250826_082153-65usehh6/logs/debug-internal.log
+2025-08-26 08:21:53,532 INFO    MainThread:1645400 [wandb_init.py:init():619] calling init triggers
+2025-08-26 08:21:53,532 INFO    MainThread:1645400 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {'accelerator': {'checkpoint': 10, 'train_continue': False}, 'data': {'data_type': 'T1w', 'dataset': '/home/dkovacevic/TSVs/training/final.csv', 'num_channels': 1, 'slice_size': 224, 'transform': Compose([RandomGamma(), RandomNoise(), RandomBiasField(), RandomBlur(), RandomSwap(), CropOrPad(), RescaleIntensity(out_min_max=(0, 1), percentiles=(0, 100), masking_method=None, in_min_max=None), Lambda(function=<function to_float32 at 0x754f4723b250>, types_to_apply=None)]), 'val_transform': Compose([CropOrPad(), Clamp(out_min=0, out_max=1), Lambda(function=<function to_float32 at 0x754f4723b250>, types_to_apply=None)]), 'volume_depth': 155}, 'feature_extraction': {'checkpoint': 'checkpoint_10', 'output': 'features', 'source_layers': ['1', '2', '4'], 'target_layer': '2'}, 'model': {'bank_size': 1024, 'in_channels': 1, 'model': <class 'training.models.Enhanced3DCNN1'>, 'out_channels': 64}, 'optim': {'lr': 0.0003, 'temperature': 0.1, 'weight_decay': 0.0001}, 'seed': 42, 'training': {'batch_size': 12, 'log_freq': 50, 'mode': 'SimCLR', 'n_iters': 20000, 'run_name': 'test_12', 'snapshot_freq': 1000, 'workers': 8}}
+2025-08-26 08:21:53,532 INFO    MainThread:1645400 [wandb_init.py:init():669] starting backend
+2025-08-26 08:21:53,532 INFO    MainThread:1645400 [wandb_init.py:init():673] sending inform_init request
+2025-08-26 08:21:53,555 INFO    MainThread:1645400 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-08-26 08:21:53,556 INFO    MainThread:1645400 [wandb_init.py:init():686] backend started and connected
+2025-08-26 08:21:53,618 INFO    MainThread:1645400 [wandb_init.py:init():781] updated telemetry
+2025-08-26 08:21:53,663 INFO    MainThread:1645400 [wandb_init.py:init():814] communicating run to backend with 90.0 second timeout
+2025-08-26 08:21:53,873 INFO    MainThread:1645400 [wandb_init.py:init():867] starting run threads in backend
+2025-08-26 08:21:54,107 INFO    MainThread:1645400 [wandb_run.py:_console_start():2456] atexit reg
+2025-08-26 08:21:54,107 INFO    MainThread:1645400 [wandb_run.py:_redirect():2305] redirect: wrap_raw
+2025-08-26 08:21:54,108 INFO    MainThread:1645400 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-08-26 08:21:54,108 INFO    MainThread:1645400 [wandb_run.py:_redirect():2395] Redirects installed.
+2025-08-26 08:21:54,126 INFO    MainThread:1645400 [wandb_init.py:init():911] run started, returning control to user process
+2025-08-26 16:18:16,354 WARNING MsgRouterThr:1645400 [router.py:message_loop():75] message_loop has been closed

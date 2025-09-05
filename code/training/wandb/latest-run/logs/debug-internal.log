@@ -1,0 +1,15 @@
+{"time":"2025-08-26T08:21:53.655607218Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-08-26T08:21:53.655763623Z","level":"INFO","msg":"created symlink","path":"/home/dkovacevic/MHM_project/training/wandb/offline-run-20250826_082153-65usehh6/logs/debug-core.log"}
+{"time":"2025-08-26T08:21:53.866785744Z","level":"INFO","msg":"created new stream","id":"65usehh6"}
+{"time":"2025-08-26T08:21:53.866942624Z","level":"INFO","msg":"stream: started","id":"65usehh6"}
+{"time":"2025-08-26T08:21:53.867104939Z","level":"INFO","msg":"writer: Do: started","stream_id":"65usehh6"}
+{"time":"2025-08-26T08:21:53.867180694Z","level":"INFO","msg":"sender: started","stream_id":"65usehh6"}
+{"time":"2025-08-26T08:21:53.867291993Z","level":"INFO","msg":"handler: started","stream_id":"65usehh6"}
+{"time":"2025-08-26T08:21:53.8927947Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-08-26T16:18:16.353700437Z","level":"INFO","msg":"stream: closing","id":"65usehh6"}
+{"time":"2025-08-26T16:18:16.353916894Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-08-26T16:18:16.355672106Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-08-26T16:18:16.356532963Z","level":"INFO","msg":"handler: closed","stream_id":"65usehh6"}
+{"time":"2025-08-26T16:18:16.356576343Z","level":"INFO","msg":"writer: Close: closed","stream_id":"65usehh6"}
+{"time":"2025-08-26T16:18:16.356616337Z","level":"INFO","msg":"sender: closed","stream_id":"65usehh6"}
+{"time":"2025-08-26T16:18:16.357190383Z","level":"INFO","msg":"stream: closed","id":"65usehh6"}
